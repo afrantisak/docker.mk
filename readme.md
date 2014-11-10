@@ -8,16 +8,19 @@ Two options: install it into a shared area, or just copy it and drop it into a D
 
 ### Install it
 
-    git clone git@github.com:afrantisak/docker.mk 
-    cd docker.mk
-    sudo make install # copies  to /usr/local/bin
-    # to uninstall:
-    sudo make install-clean
-
+```sh
+git clone git@github.com:afrantisak/docker.mk 
+cd docker.mk
+sudo make install # copies  to /usr/include
+# to uninstall:
+sudo make install-clean
+```
 ### Add it to a Dockerfile project
 
-    cd <existing Dockerfile project dir>
-    wget http://github.com/afrantisak/docker.mk/raw/################# TODO -o docker.mk
+```sh
+cd <existing Dockerfile project dir>
+wget https://raw.githubusercontent.com/afrantisak/docker.mk/master/docker.mk
+```
 
 ## Usage:
 
@@ -29,6 +32,6 @@ include docker.mk
 image_name = <choose your name>
 ```
 
-Then to build it, simply `make`.  `make start` to run it, `make stop` to stop it.  `make debug` will run bash on it.  See the docker.mk file itself for more commands.
+Then to build it, simply `make`.  To run it, `make start`; `make stop` to stop it.  `make debug` will run bash on it.  See the docker.mk file itself for more commands.
 
 Thanks to https://github.com/ninenines/erlang.mk for the inspiration.
