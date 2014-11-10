@@ -4,7 +4,7 @@ As I was building and testing yet another Dockerfile, I threw together a Makefil
 
 ## Installation:
 
-Two options: install it into a shared area, or just copy it and drop it into a Dockerfile project directory.
+Two options: install it into a shared area, or just add it as a file into an existing Dockerfile project directory.
 
 ### Install it
 
@@ -15,7 +15,8 @@ sudo make install # copies  to /usr/include
 # to uninstall:
 sudo make install-clean
 ```
-### Add it to a Dockerfile project
+
+### OR add to existing Dockerfile project
 
 ```sh
 cd <existing Dockerfile project dir>
