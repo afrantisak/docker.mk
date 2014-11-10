@@ -1,6 +1,6 @@
 # docker.mk
 
-As I was building and testing yet another Dockerfile, I threw together a Makefile to save typing and remembering all the command-line arguements.  I'm not a makefile expert but this gets the job done. 
+As I was building and testing yet another Dockerfile, I got tired of trying to remember all the command-line arguments.  So I threw together a Makefile to save typing and remembering.  I'm not a makefile expert but this gets the job done. 
 
 ## Installation:
 
@@ -33,9 +33,10 @@ include docker.mk
 image_name = <choose your name>
 ```
 
-Choose a name wisely.  If you want to upload to [docker.io](https://registry.hub.docker.com/) make sure you prefix with the proper username (`<username>/<image_name>`).
+Choose a name wisely -- if you want to upload to [the docker.io registry](https://registry.hub.docker.com/) make sure you prefix with the proper username (`<username>/<image_name>`).
 
-Then to build it, simply `make`.  To run it, `make start`; To stop,`make stop`.  `make debug` will run bash on it.  
-See the [docker.mk file itself](https://github.com/afrantisak/docker.mk/blob/master/docker.mk) for the full set of commands.
+## Building and running:
+To build your image, simply `make`.  To run it, `make start`; To stop,`make stop`.  `make debug` will run bash on it.  See the [docker.mk file itself](https://github.com/afrantisak/docker.mk/blob/master/docker.mk) for the full set of commands.  
 
+## Thanks
 Thanks to [erlang.mk](https://github.com/ninenines/erlang.mk) for the inspiration.
