@@ -33,6 +33,6 @@ image_name = <choose your name>
 ```
 
 Then to build it, simply `make`.  To run it, `make start`; `make stop` to stop it.  `make debug` will run bash on it.  
-See the [docker.mk file itself](https://github.com/afrantisak/docker.mk/blob/master/docker.mk) for more commands.
+See the [docker.mk file itself](https://github.com/afrantisak/docker.mk/blob/master/docker.mk) for the full set of commands.
 
-Thanks to https://github.com/ninenines/erlang.mk for the inspiration.
+Thanks to [erlang.mk](https://github.com/ninenines/erlang.mk) for the inspiration.
